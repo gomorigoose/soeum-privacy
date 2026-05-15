@@ -43,7 +43,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-seri
       <li><strong>신체/정신 피해 기록</strong> — 수면 방해, 두통, 불안, 약 복용 여부, 우울감 등 사용자가 직접 입력한 건강 관련 정보</li>
       <li><strong>대응 활동 기록</strong> — 대응 방법, 일시, 결과 등 사용자가 직접 입력한 정보</li>
       <li><strong>녹음 파일</strong> — 사용자가 직접 녹음한 오디오 파일 (기기 내 저장)</li>
-      <li><strong>녹화 파일</strong> — 사용자가 직접 녹화한 영상 파일 (기기 내 저장)</li>
     </ul>
   </div>
 
@@ -66,7 +65,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-seri
     </div>
     <ul>
       <li>모든 기록 데이터는 기기 내 로컬 저장소(AsyncStorage)에 저장됩니다.</li>
-      <li>녹음, 녹화 파일은 기기 내 파일 시스템에 저장됩니다.</li>
+      <li>녹음 파일은 기기 내 파일 시스템에 저장됩니다.</li>
       <li>각 기록에는 SHA-256 해시값이 부여되어 기록 시점의 무결성을 보호합니다.</li>
       <li>앱을 삭제하면 모든 데이터가 함께 삭제됩니다.</li>
     </ul>
@@ -84,8 +83,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-seri
     <h2>6. 요청하는 권한</h2>
     <ul>
       <li><strong>마이크</strong> — 층간소음 녹음 및 데시벨 측정을 통한 증거 수집 목적</li>
-      <li><strong>카메라</strong> — 소음 발생 현장 녹화를 통한 증거 수집 목적</li>
-      <li><strong>저장소</strong> — 녹음, 녹화 파일의 기기 내 저장 목적</li>
+      <li><strong>저장소</strong> — 녹음 파일의 기기 내 저장 목적</li>
       <li><strong>알림</strong> — 주간/월간 소음 기록 요약 알림 발송 목적 (사용자가 허용한 경우에만 작동)</li>
     </ul>
     <p style="margin-top:0.6rem;">모든 권한은 사용자가 해당 기능을 사용할 때만 요청되며, 거부하더라도 다른 기능은 정상적으로 사용할 수 있습니다.</p>
